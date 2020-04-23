@@ -7,11 +7,11 @@
     background-size: cover;
     background-position: top;
     position: relative;
-    background-image: linear-gradient(
-    to right bottom ,
-    rgba($color-secondary, 0.5),
-        rgba($color-secondary-dark, 0.5)) , 
-        url(../assets/img/header.jpeg);
+    // background-image: linear-gradient(
+    // to right bottom ,
+    // rgba($color-secondary, 0.5),
+    //     rgba($color-secondary-dark, 0.5)) , 
+    //     url(../assets/img/header.jpeg);
 
     // &__video {
     //     object-fit: cover;
@@ -83,68 +83,36 @@
   }
 }
 
-// .header {
-//     height: 95vh;
-//     background-image: linear-gradient(
-//     to right bottom ,
-//     rgba($color-secondary, 0.5),
-//         rgba($color-secondary-dark, 0.5)) , 
-//         url(../assets/img/header.jpeg);
-//     background-size: cover;
-//     background-position: top;
-//     position: relative;
 
-//     &__text {
-//         padding: 15rem 8rem;
+.video__wrap {
+  width: 100%;
+}
+.video__overlay {
+  // positioning
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  
+  // overlay image
+  opacity: 0.75;
+  background: linear-gradient(
+    to right bottom ,
+    rgba($color-secondary, 0.5),
+        rgba($color-secondary-dark, 0.5)) , 
+        url(../assets/img/header.jpeg) center center no-repeat;
+  background-size: cover;
+}
 
-//         display: grid;
-//         grid-template-rows: 1fr min-content 1fr;
-//         grid-template-columns: minmax(30rem , max-content);
-//         grid-row-gap: 2rem;
-//         justify-content: center;
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 
-//     }
-
-//     &__btn {
-//         align-self: start;
-//         justify-self: start;
-
-//         padding: 1.5rem 3rem;
-//         font-size: 1.5rem;
-//         transition: all 0.5s ease 0s;
-//         white-space: nowrap;
-//         font-weight: 400;
-
-//         &:hover,
-//         &:focus,
-//         &:active {
-//             color: $color-primary-light;
-//             text-decoration: none;
-//             background-color: transparent;
-//             padding: 1.3rem 2.8rem;
-//             border: 2px solid #fff;
-//         }
-//     }
-
-// }
-
-//     &__btn {
-//         align-self: start;
-//         justify-self: start;
-
-//         padding: 1.5rem 3rem;
-//         font-size: 1.5rem;
-//         transition: all 0.5s ease 0s;
-//         white-space: nowrap;
-//         font-weight: 400;
-
-//         &:hover,
-//         &:focus,
-//         &:active {
-//             color: $color-primary-light;
-//             text-decoration: none;
-//             background-color: transparent;
-//             padding: 1.3rem 2.8rem;
-//             border: 2px solid #fff;
-//         }
-//     }
+}
