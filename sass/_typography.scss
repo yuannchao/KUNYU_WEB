@@ -1,0 +1,132 @@
+%heading {
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 7.5rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    line-height: 1;
+    color: $color-grey-dark-2;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 2rem;
+    color: $color-grey-dark-2;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 4rem;
+    line-height: 1;
+    color: $color-primary-light;
+}
+
+.paragraph {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: $color-grey-dark-2;
+    margin: 3rem 0;
+    font-style: italic;
+}
+
+.dot-vertical {
+    transform-origin: center 2px;
+    width: 15rem;
+    height: 5px;
+    transform: rotate(90deg);
+    border-top: 4px dotted #0a0186;
+    margin-top: 8rem;
+}
+
+.dot-horizontal {
+    transform-origin: center 2px;
+    width: 15rem;
+    height: 5px;
+    border-top: 2px solid #0a0186;
+}
+
+.button {
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: .5rem 4rem;
+    display: inline-block;
+    transition: all .2;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background-color: $color-grey-dark-2;
+    color: #fff;
+
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba(#000 , .2);
+    }
+
+    &:active {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(#000 , .2);
+    }
+}
+
+// .cta {
+//     padding: 1.25rem;
+//     font-size: 1.5rem;
+//     color: $color-primary;
+//     transition: all .2;
+
+//     &:hover {
+//         color: $color-grey-dark-2;
+//     }
+// }
+
+.form {
+    color: $color-grey-dark-3;
+    font-size: 1.5rem;
+
+    &__group:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: .5rem 2rem;
+        background-color: rgba(#fff , .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        color: inherit;
+
+        width: 100%;
+        display: block;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(#000, .1);
+            border-bottom: 3px solid $color-primary-dark;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid rgb(101, 3, 3);
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__label {
+        font-weight: 500;
+        margin-top: .7rem;
+        display: block;
+    }
+}

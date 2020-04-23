@@ -1,0 +1,50 @@
+.features {
+    background-color: $color-grey-light-1;
+    grid-column: full-start / full-end;
+    padding: 8rem 8rem;
+
+    &__content {
+
+        @supports(display: grid) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            grid-gap: 6rem;
+            align-items: start;
+        }
+    }
+
+    &__text {
+        padding: 5rem 0;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+.feature {
+    justify-items: center;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: minmax(min-content , 1fr);
+    grid-row-gap: 2rem;
+
+    margin-bottom: 6rem;
+
+    @supports(display: grid) {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+
+    &__icon {
+        fill: $color-grey-dark-1;
+        width: 8rem;
+        height: 8rem;
+        grid-row: 1 / span 1;
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+}

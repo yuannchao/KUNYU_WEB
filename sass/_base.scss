@@ -1,0 +1,60 @@
+// COLOR VARIABLES
+$color-primary-light: #c5d7ee;
+$color-primary: #8fa5c8;
+$color-primary-dark: #5170ae;
+
+$color-secondary: #0b6365;
+$color-secondary-dark: #2d3580;
+
+
+$color-grey-light-1: #efefef;
+$color-grey-light-2: #605e5e;
+
+$color-grey-dark-1: #32466a;
+$color-grey-dark-2: #0d1e2d;
+$color-grey-dark-3: #2f2e2e;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+// font-family: ‘cwTeXYen’, sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Josefin Sans", "Nunito","Noto Sans TC","黑體-繁","微軟正黑體", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    color: $color-grey-light-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 95vh repeat(6 , min-content);
+    grid-template-columns: [full-start] minmax(6rem , 1fr) [center-start] repeat(8 , [col-start] minmax(min-content , 14rem) [col-end]) [center-end] minmax(6rem , 1fr) [full-end];
+
+}
+
+
+
