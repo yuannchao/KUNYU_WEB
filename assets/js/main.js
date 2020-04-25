@@ -17,8 +17,8 @@ $(document).ready(function(){
   $(function(){
       $('.slideshow h1:gt(0)').hide();
       setInterval(function(){
-        $('.slideshow :first-child').fadeOut(2000)
-           .next('h1').fadeIn(4000)
+        $('.slideshow :first-child').fadeOut(1500)
+           .next('h1').fadeIn(5000)
            .end().appendTo('.slideshow');}, 
         6000);
   });

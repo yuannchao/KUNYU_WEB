@@ -89,7 +89,7 @@
         }
     
         &__button {
-            background-color: rgba($color-secondary-dark , .9);
+            background-color: rgba($color-grey-dark-1 , .9);
             height: 5rem;
             width: 5rem;
             position: fixed;
@@ -104,13 +104,13 @@
         }
     
         &__background {
-            height: 4rem;
-            width: 4rem;
+            height: 5rem;
+            width: 5rem;
             border-radius: 50%;
             position: fixed;
             top: .5rem;
-            right: 2.5rem;
-            background-image: radial-gradient($color-secondary, $color-secondary-dark);
+            right: 2rem;
+            background-image: radial-gradient($color-grey-dark-1 , $color-secondary);
             z-index: 1000;
             transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
         }

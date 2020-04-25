@@ -10,7 +10,7 @@
     // background-image: linear-gradient(
     // to right bottom ,
     // rgba($color-secondary, 0.5),
-    //     rgba($color-secondary-dark, 0.5)) , 
+    //     rgba($color-secondary-dark, 0.5)) ,
     //     url(../assets/img/header.jpeg);
 
     // &__video {
@@ -26,13 +26,13 @@
     //     height: inherit;
     //     width: 100%;
     //     z-index: 1;
-    //     background: linear-gradient(to right,rgba($color-secondary, 0.8), rgba($color-secondary-dark, 0.8)); 
+    //     background: linear-gradient(to right,rgba($color-secondary, 0.8), rgba($color-secondary-dark, 0.8));
     // }
 
     &__icon {
         width: 3rem;
         height: 3rem;
-        fill: $color-primary-light;
+        fill: $color-grey-light-1;
         margin: auto;
         display: block;
         margin-top: 1rem;
@@ -47,22 +47,26 @@
     transform: translate(-50% , -50%); /* make header in the center */
 
     z-index: 10;
+
+    border-left: 7px solid $color-grey-dark-1;
+    padding: 1.5rem;
 }
 
 
 .arrow {
     position: absolute;
     top: 80%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50% , -50%); /* make header in the center */
     z-index: 20;
-    
-    & > a { 
-        font-size: 1.5rem;
+
+    & > a {
+        font-size: 2rem;
         font-weight: 400;
-        color: $color-primary-light;
-        text-decoration: none; 
+        color: $color-grey-light-1;
+        text-decoration: none;
     }
+
 }
 
 .bounce {
@@ -95,13 +99,13 @@
   left: 0;
   position: absolute;
   z-index: 2;
-  
+
   // overlay image
-  opacity: 0.75;
+  opacity: 0.85;
   background: linear-gradient(
     to right bottom ,
-    rgba($color-secondary, 0.5),
-        rgba($color-secondary-dark, 0.5)) , 
+    rgba($color-secondary, 0.7),
+        rgba($color-secondary-dark, 0.7)) ,
         url(../assets/img/header.jpeg) center center no-repeat;
   background-size: cover;
 }
@@ -114,5 +118,4 @@
   min-height: 100%;
   width: auto;
   height: auto;
-
 }

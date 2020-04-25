@@ -5,27 +5,25 @@
     &__content {
         @supports(display: grid) {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
             grid-gap: 6rem;
         }
     }
-
-    // &__text {
-    //     padding: 5rem 0;
-    //     justify-content: center;
-    //     text-align: center;
-    // }
 
     &__logo {
         padding: 5rem 0;
         justify-content: center;
         text-align: center;
+
+        & > img {
+            width: 30rem;
+        }
     }
 }
 
 .about {
     background-color: $color-primary-light;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 3rem;
 
     display: flex;
@@ -41,8 +39,14 @@
         margin-bottom: 1rem;
 
         border-radius: 50%;
-        background-color: $color-secondary-dark;
+        background-color: $color-grey-dark-1;
         display: block;
     }
+
+    & > .heading-3 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
 
 }
