@@ -192,27 +192,55 @@
                     <h2 class="heading-2">聯絡我們</h2>
                     <p class="paragraph">如欲瞭解更多我們的產品或服務，請與我們聯繫</p>
 
-                    <form class="form" role="form" action="assets/sendmail.php" method="post">
-                        <div class="form__group">
-                            <label class="form__label" for="name">姓名<sup>＊</sup></label>
-                            <input class="form__input" type="text" placeholder="請輸入姓名" id="name">
+                    <div class="contact__item">
+                        <div class="contact__location">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#pin"></use>
+                            </svg>
+                            <p>地址：110台北市信義區基隆路一段432號302室</p>
                         </div>
-                        <div class="form__group">
-                            <label class="form__label" for="email">信箱<sup>＊</sup></label>
-                            <input class="form__input" type="email" placeholder="請輸入信箱" id="email">
+                        <div class="contact__phone">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#call"></use>
+                            </svg>
+                            <p>電話：02-2325-5956</p>
                         </div>
-                        <div class="form__group">
-                            <label class="form__label" for="subject">主題</label>
-                            <input class="form__input" type="text" name="subject" placeholder="訊息主題" id="subject">
+                        <div class="contact__email">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#email"></use>
+                            </svg>
+                            <p>email：</p>
                         </div>
-                        <div class="form__group">
-                            <label class="form__label" for="message">內容</label>
-                            <textarea class="form__input" name="message" placeholder="請輸入內容..." id="message"></textarea>
+                        <div class="contact__hour">
+                            <h3 class="heading-3">營業時間</h3>
+                            <span>
+                                Mon - Fri: 7am - 10pm<br>
+                                ​​Saturday: 8am - 10pm<br>
+                                ​Sunday: 8am - 11pm
+                            </span>
                         </div>
-                        <div class="form__group">
-                            <button class="button">提交</button>
-                        </div>
-                    </form>
+                    </div>
+                    <!-- <form class="form" role="form" action="assets/sendmail.php" method="post">
+                <div class="form__group">
+                    <label class="form__label" for="name">姓名<sup>＊</sup></label>
+                    <input class="form__input" type="text" placeholder="請輸入姓名" id="name">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="email">信箱<sup>＊</sup></label>
+                    <input class="form__input" type="email" placeholder="請輸入信箱" id="email">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="subject">主題</label>
+                    <input class="form__input" type="text" name="subject" placeholder="訊息主題" id="subject">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="message">內容</label>
+                    <textarea class="form__input" name="message" placeholder="請輸入內容..." id="message"></textarea>
+                </div>
+                <div class="form__group">
+                    <button class="button">提交</button>
+                </div>
+            </form> -->
                 </div>
 
                 <iframe class="contact__map"
